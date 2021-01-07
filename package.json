@@ -1,0 +1,22 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "To do App",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pivanta/to-do-app.git"
+  },
+  "author": "Abdul Basit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pivanta/to-do-app/issues"
+  },
+  "homepage": "https://github.com/Pivanta/to-do-app#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
