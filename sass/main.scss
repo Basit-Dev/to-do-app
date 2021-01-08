@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+.desktop-bg-image {
+  width: 100vw;
+}
+.container {
+  position: relative;
+  top: -150px;
+  width: 50%;
+  max-width: 600px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+  }
+  &__light-dark-toggle {
+    cursor: pointer;
+  }
+}
+
+.list {
+  &__container {
+    border-radius: 5px;
+    color: grey;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    -webkit-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+    -moz-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+    box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+  }
+  &__input {
+    margin: 1rem 0;
+  }
+  &__field {
+    display: inline;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 3rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  &__bottom-info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  &__stats {
+    display: flex;
+    p {
+      padding: 0 0.5rem;
+    }
+    :nth-child(1) {
+        color: rgb(0, 170, 255);
+    }
+  }
+  &__reorder {
+    position: relative;
+    top: 50px;
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  &__circle {
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: solid 1pt grey;
+    cursor: pointer;
+    background-color: white;
+  }
+  &__dynamic {
+    padding: 0.8rem;
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1pt rgb(231, 231, 231);
+  }
+  &__li {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: solid 1pt grey;
+    background: linear-gradient(
+      153deg,
+      rgba(131, 147, 222, 1) 0%,
+      rgba(200, 46, 193, 1) 6%,
+      rgba(194, 152, 231, 1) 100%
+    );
+    margin-left: 0.4rem;
+  }
+  &__item {
+    padding: 0 1.2rem;
+  }
+}
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}

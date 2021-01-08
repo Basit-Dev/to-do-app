@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | Todo app</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" />
   <script src="app.js"></script>
 </head>
+
 <body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
+  <img class="desktop-bg-image" src="./images/bg-desktop-light.jpg" alt="Mountain image">
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">Todo</h1>
+      <div class="header__light-dark-toggle">
+        <img src="./images/icon-sun.svg" alt="Sun icon" />
+      </div>
+    </header>
+    <div class="list">
+      <div class="list__circle">
+        <button class="list__button">
+      </div>
+      <div class="list__input">
+        <input class="list__field" type="text" placeholder="Create a new todo" />
+      </div>
+      <div class="list__container">
+        <ul class="list__dynamic">
+          <button class="list__li">
+            <img src="./images/icon-check.svg" alt="">
+          </button>
+          <li class="list__item">Jog around the park and complete 100k</li>
+        </ul>
+        <div class="list__bottom-info">
+          <div class="list__item-left">
+            <!-- Add dynamic number -->1
+            items left
+          </div>
+          <div class="list__stats">
+            <p>All</p>
+            <p>Active</p>
+            <p>Completed</p>
+          </div>
+          <div class="list__clear">Clear Completed</div>
+        </div>
+      </div>
+      <div class="list__reorder">
+        Drag and drop to reorder list
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor<a>. Coded by <a href="#">Abdul Basit</a>.
   </div>
 </body>
+
 </html>
