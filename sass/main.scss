@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 *,
 ::before,
@@ -10,23 +10,45 @@
 
 html {
   font-size: 112.5%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  color: gray;
 }
-.desktop-bg-image {
-  width: 100vw;
+body {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  background-image: url('/images/bg-mobile-light.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.container {
-  position: relative;
-  top: -150px;
-  width: 50%;
+//  background image, cover and auto strecthes the image, contain makes it responsive,
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  color: grey;
+  &:hover {
+    color: rgb(60, 157, 254);
+  }
+}
+// MAIN CONTAINER
+.main-container {
+  width: 80%;
   max-width: 600px;
   margin: auto;
 }
+// MAIN CONTAINER END
+
+// HEADER
 .header {
-  display: flex;
-  justify-content: space-between;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
   &__title {
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     letter-spacing: 20px;
   }
@@ -34,96 +56,173 @@ html {
     cursor: pointer;
   }
 }
+// HEADER END
+
+// INPUT
+.input {
+  &__container {
+    margin: 1.7rem 0;
+  }
+  &__field {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    padding: 0 2.5rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: inherit;
+  }
+  &__button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin: 0.6rem;
+    border-radius: 50%;
+    border: solid 1pt rgb(210, 210, 210);
+    background-color: white;
+  }
+}
+// LIST CONTAINER
 
 .list {
   &__container {
-    border-radius: 5px;
-    color: grey;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    font-size: 0.8rem;
+    background-color: white;
+    min-height: 50px;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    //padding: 1rem;
     -webkit-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
     -moz-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
     box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
   }
-  &__input {
-    margin: 1rem 0;
-  }
-  &__field {
-    display: inline;
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    padding: 0 3rem;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  &__bottom-info {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+}
+// STATS CONTAINER
+.show {
+  &__stats-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1rem;
   }
-  &__stats {
-    display: flex;
-    p {
-      padding: 0 0.5rem;
-    }
-    :nth-child(1) {
-        color: rgb(0, 170, 255);
-    }
+  &__item-left {
+    color: inherit;
+    font-size: 0.85rem;
   }
-  &__reorder {
-    position: relative;
-    top: 50px;
-    color: grey;
-    font-size: 0.8rem;
-    text-align: center;
+  &__stats-middle {
+    display: inherit;
+    justify-content: space-around;
+    position: absolute;
+    top: 100px;
+    left: -16px;
+    width: 110%;
+    background-color: white;
+    height: 50px;
+    border-radius: 7px;
+    -webkit-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+    -moz-box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+    box-shadow: -1px 11px 15px -3px rgba(50, 50, 50, 0.39);
+  }
+  &__all {
+    color: rgb(0, 170, 255);
   }
 
-  &__circle {
-    position: relative;
-  }
-  &__button {
+  &__reorder {
     position: absolute;
-    top: 13px;
-    left: 20px;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    border: solid 1pt grey;
-    cursor: pointer;
-    background-color: white;
-  }
-  &__dynamic {
-    padding: 0.8rem;
-    list-style-type: none;
-    display: inline-flex;
-    align-items: center;
+    top: 180px;
     width: 100%;
-    border-bottom: solid 1pt rgb(231, 231, 231);
-  }
-  &__li {
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    border: solid 1pt grey;
-    background: linear-gradient(
-      153deg,
-      rgba(131, 147, 222, 1) 0%,
-      rgba(200, 46, 193, 1) 6%,
-      rgba(194, 152, 231, 1) 100%
-    );
-    margin-left: 0.4rem;
-  }
-  &__item {
-    padding: 0 1.2rem;
+    text-align: center;
+    color: inherit;
+    font-size: 0.8rem;
   }
 }
+// STATS CONTAINER END
+
+// LI
+.list__dynamic {
+  position: relative;
+  list-style-type: none;
+  border-bottom: solid 1pt rgb(216, 216, 216);
+  padding: 0.7rem 2rem;
+  color: inherit;
+  &:hover {
+    background-color: antiquewhite;
+  }
+  &:nth-child(1) {
+    border-radius: 7px 7px 0 0;
+  }
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  padding: 2rem;
   font-size: 0.8rem;
-  margin-bottom: 1rem;
+}
+.btnD {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 15px;
+    height: 15px;
+  }
+}
+.btn2 {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: linear-gradient(
+    153deg,
+    rgba(131, 147, 222, 1) 0%,
+    rgba(200, 46, 193, 1) 6%,
+    rgba(194, 152, 231, 1) 100%
+  );
+  border: none;
+  position: absolute;
+  left: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.li{
+text-decoration-line: line-through;
+color: blue;
+}
+// MOBILE
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url('/images/bg-desktop-light.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .show {
+    &__stats-middle {
+      top: 3px;
+      left: 30%;
+      width: 40%;
+      background: none;
+      //height: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    &__reorder {
+      top: 80px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-size:auto;
+  }
 }

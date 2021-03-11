@@ -7,54 +7,71 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Frontend Mentor | Todo app</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <script src="app.js"></script>
 </head>
 
 <body>
-  <img class="desktop-bg-image" src="./images/bg-desktop-light.jpg" alt="Mountain image">
-  <div class="container">
-    <header class="header">
+
+  <div class="main-container">
+
+
+    <!-- -----------------------HEADER CONTAINER----------------------------- -->
+    <header class="header__container">
       <h1 class="header__title">Todo</h1>
       <div class="header__light-dark-toggle">
         <img src="./images/icon-sun.svg" alt="Sun icon" />
       </div>
     </header>
-    <div class="list">
-      <div class="list__circle">
-        <button class="list__button">
-      </div>
-      <div class="list__input">
-        <input class="list__field" type="text" placeholder="Create a new todo" />
-      </div>
-      <div class="list__container">
-        <ul class="list__dynamic">
-          <button class="list__li">
-            <img src="./images/icon-check.svg" alt="">
-          </button>
-          <li class="list__item">Jog around the park and complete 100k</li>
-        </ul>
-        <div class="list__bottom-info">
-          <div class="list__item-left">
-            <!-- Add dynamic number -->1
-            items left
-          </div>
-          <div class="list__stats">
-            <p>All</p>
-            <p>Active</p>
-            <p>Completed</p>
-          </div>
-          <div class="list__clear">Clear Completed</div>
+
+    <!-- -----------------------END OF HEADER-------------------------------------- -->
+
+    <!-- -----------------------INPUT CONTAINER-------------------------------------- -->
+    <section class="input__container">
+      <button class="btn input__button"></button>
+      <input id="input-field" class="input__field" type="text" placeholder="Create a new todo" value="Test" />
+    </section>
+    <!-- -----------------------END OF INPUT CONTAINER---------------------------- -->
+
+    <!-- -----------------------LIST CONTAINER------------------------------------- -->
+    <section id="list-container" class="list__container">
+      <ul id="list-ul" class="list__ul">
+        <!-- <li class="list__dynamic">yui 1 <button onclick="getName()">test</button></li>
+        <li class="list__dynamic">yui 2</li>
+        <li class="list__dynamic">yui 3</li> -->
+      </ul>
+
+      <!-- -----------------------STATS CONTAINER----------------------------------- -->
+      <section class="show__stats-container">
+        <div id="items-left" class="show__item-left">
+          <!-- Add dynamic number -->
+          items left
         </div>
-      </div>
-      <div class="list__reorder">
-        Drag and drop to reorder list
-      </div>
-    </div>
+        <div class="show__stats-middle">
+          <button class="btn show__all">All</button>
+          <button class="btn show__active">Active</button>
+          <button class="btn show__completed">Completed</button>
+        </div>
+        <button class="btn show__clear">Clear Completed</button>
+        <div class="show__reorder">
+          Drag and drop to reorder list
+        </div>
+      </section>
+
+
+    </section>
+    <!-- -----------------------END OF STATS CONTAINER----------------------------- -->
+    <!-- -----------------------END OF LIST CONTAINER----------------------------- -->
+
   </div>
+
   <div class="attribution">
     Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor<a>. Coded by <a href="#">Abdul Basit</a>.
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor<a>. Coded by <a href="#">Abdul
+          Basit</a>.
   </div>
+
+  <div id="foo"></div>
+  <!-- <button id="test" class="testing">TEST</button> -->
+  <script src="app.js"></script>
 </body>
 
 </html>
