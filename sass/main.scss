@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
 *,
 ::before,
@@ -10,13 +10,13 @@
 
 html {
   font-size: 112.5%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: gray;
 }
 body {
   background-color: rgb(243, 243, 243);
   width: 100%;
-  background-image: url('/images/bg-mobile-light.jpg');
+  background-image: url("/images/bg-mobile-light.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -143,7 +143,7 @@ body {
   position: relative;
   list-style-type: none;
   border-bottom: solid 1pt rgb(216, 216, 216);
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 0.6rem;
   color: inherit;
   &:hover {
     background-color: antiquewhite;
@@ -152,7 +152,24 @@ body {
     border-radius: 7px 7px 0 0;
   }
 }
-
+.completed {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    hsla(192, 100%, 80%, 1) 0%,
+    hsla(280, 100%, 65%, 1) 50%,
+    hsla(263, 58%, 45%, 1) 100%
+  );
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  &__image {
+    text-align: center;
+    padding: 0.25rem;
+  }
+}
 .attribution {
   position: relative;
   bottom: 0;
@@ -192,14 +209,14 @@ body {
   }
 }
 
-.li{
-text-decoration-line: line-through;
-color: blue;
+.li {
+  text-decoration-line: line-through;
+  color: blue;
 }
 // MOBILE
 @media only screen and (min-width: 500px) {
   body {
-    background-image: url('/images/bg-desktop-light.jpg');
+    background-image: url("/images/bg-desktop-light.jpg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -223,6 +240,6 @@ color: blue;
 
 @media only screen and (min-width: 1200px) {
   body {
-    background-size:auto;
+    background-size: auto;
   }
 }

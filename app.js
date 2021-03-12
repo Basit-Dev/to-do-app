@@ -11,5 +11,7 @@ const createLi = function () {
   newLi.classList.add("list__dynamic");
 };
 
+  // TODO Insert span and image and class when completed clicked
+
 // createLi function gets invoked when btn clicked.
 btnEl.addEventListener("click", createLi);

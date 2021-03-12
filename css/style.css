@@ -125,7 +125,7 @@ body {
   position: relative;
   list-style-type: none;
   border-bottom: solid 1pt #d8d8d8;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 0.6rem;
   color: inherit;
 }
 .list__dynamic:hover {
@@ -133,6 +133,20 @@ body {
 }
 .list__dynamic:nth-child(1) {
   border-radius: 7px 7px 0 0;
+}
+
+.completed {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #99ebff 0%, #c44dff 50%, #6330b5 100%);
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.completed__image {
+  text-align: center;
+  padding: 0.25rem;
 }
 
 .attribution {
